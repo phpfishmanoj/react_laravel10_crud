@@ -14,32 +14,37 @@ DB_CONNECTION=sqlite
 # DB_USERNAME=root
 # DB_PASSWORD=
 
-npm create vite (Vite is new technology scaffold the diff applications using like react, vue.js, venilla js)
-
-
-  cd react_app
-  npm install
-  npm run dev
+   
+- **npm create vite (Vite is new technology scaffold the diff applications using like react, vue.js, venilla js)
+- **cd react_app
+- **npm install  
+- **npm run dev
   
-  laravel10_react_crud\react_app\package.json
+laravel10_react_crud\react_app\package.json
 	"dev": "vite --port=3000",
   
-  npm install react-router-dom -S // this will install router package and add into package.json
   
-  npm install -S axios // for sending request to frontend to backend using axios, it's very popular client for http requests 
+- **npm install react-router-dom -S // this will install router package and add into package.json
+- **npm install -S axios // for sending request to frontend to backend using axios, it's very popular client for http requests 
   
   ============================ Laravel =============================
   
   
-  #php artisan make:controller Api/UserAuthController
-  #php artisan make:request RegisterRequest
-  #php artisan make:request LoginRequest
-  #php artisan make:controller Api/UserController --model=User --resource --requests --api
+
+- **php artisan make:controller Api/UserAuthController
+  
+- **php artisan make:request RegisterRequest
+  
+- **php artisan make:request LoginRequest
+  
+- **php artisan make:controller Api/UserController --model=User --resource --requests --api
   
   ================== Final build ================
-  npm run build
   
-  .httaccess
+- **npm run build
+  
+  
+- **.httaccess
   
   RewriteEngine On
   RewriteCond %{REQUEST_FILENAME} !-f
@@ -47,9 +52,10 @@ npm create vite (Vite is new technology scaffold the diff applications using lik
   RewriteRule . index.html
   
   =========================================================================================
-  ls -s ~/domains/api.mysite.com/public/index.php index.php // symbolic link for index file
-	or 
-  ls -s ~/domains/api.mysite.com/public api // symbolic link for index file
+
+- **ls -s ~/domains/api.mysite.com/public/index.php index.php // symbolic link for index file
+	or
+- **ls -s ~/domains/api.mysite.com/public api // symbolic link for index file
 
 ==============
 
