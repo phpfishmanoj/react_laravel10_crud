@@ -55,7 +55,7 @@ laravel10_react_crud\react_app\package.json
 
 - **ls -s ~/domains/api.mysite.com/public/index.php index.php // symbolic link for index file
 	or
-- **ls -s ~/domains/api.mysite.com/public api // symbolic link for index file
+- **ls -s ~/domains/api.mysite.com/public api // symbolic link for api folder
 
 ==============
 
