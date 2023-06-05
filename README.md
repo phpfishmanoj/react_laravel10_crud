@@ -1,5 +1,62 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
+======================
+
+cd react_laravel_crud
+
+.env
+
+DB_CONNECTION=sqlite
+# DB_CONNECTION=mysql
+# DB_HOST=127.0.0.1
+# DB_PORT=3306
+# DB_DATABASE=react_laravel_crud
+# DB_USERNAME=root
+# DB_PASSWORD=
+
+npm create vite (Vite is new technology scaffold the diff applications using like react, vue.js, venilla js)
+
+
+  cd react_app
+  npm install
+  npm run dev
+  
+  laravel10_react_crud\react_app\package.json
+	"dev": "vite --port=3000",
+  
+  npm install react-router-dom -S // this will install router package and add into package.json
+  
+  npm install -S axios // for sending request to frontend to backend using axios, it's very popular client for http requests 
+  
+  npm install http-proxy-middleware -S  // Optional
+  
+  ============================ Laravel =============================
+  
+  
+  php artisan make:controller Api/UserAuthController
+  php artisan make:request RegisterRequest
+  php artisan make:request LoginRequest
+  
+  composer require fruitcake/laravel-cors // Optional
+  
+  
+  ================== Final build ================
+  npm run build
+  
+  .httaccess
+  
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . index.html
+  
+  =========================================================================================
+  ls -s ~/domains/api.mysite.com/public/index.php index.php // symbolic link for index file
+	or 
+  ls -s ~/domains/api.mysite.com/public api // symbolic link for index file
+
+==============
+
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
