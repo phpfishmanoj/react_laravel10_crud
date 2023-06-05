@@ -28,17 +28,13 @@ npm create vite (Vite is new technology scaffold the diff applications using lik
   
   npm install -S axios // for sending request to frontend to backend using axios, it's very popular client for http requests 
   
-  npm install http-proxy-middleware -S  // Optional
-  
   ============================ Laravel =============================
   
   
-  php artisan make:controller Api/UserAuthController
-  php artisan make:request RegisterRequest
-  php artisan make:request LoginRequest
-  
-  composer require fruitcake/laravel-cors // Optional
-  
+  #php artisan make:controller Api/UserAuthController
+  #php artisan make:request RegisterRequest
+  #php artisan make:request LoginRequest
+  #php artisan make:controller Api/UserController --model=User --resource --requests --api
   
   ================== Final build ================
   npm run build
